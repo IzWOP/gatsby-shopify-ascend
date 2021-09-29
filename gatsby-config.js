@@ -18,9 +18,12 @@ module.exports = {
     {
       resolve: "gatsby-source-shopify",
       options: {
+        // password: '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',
+        // storeUrl: 'ascendclothingus.myshopify.com',
         password: process.env.SHOPIFY_SHOP_PASSWORD,
         storeUrl: process.env.GATSBY_SHOPIFY_STORE_URL,
         shopifyConnections: ["collections"],
+
       },
     },
     "gatsby-plugin-image",
